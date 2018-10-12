@@ -29,25 +29,39 @@ class ArticleShow extends Component {
     }
 
     return (
-      <div>
-        <br />
-        <button
-          className="btn btn-danger pull-xs-right"
-          onClick={this.onDeleteClick.bind(this)}
-        >
-          Delete Post
-        </button>
-        <Link to="/">Back To Index</Link>
-        <br /> <br />
-        <div style={{flexDirection:'row',justifyItems:''}}>
-          <img src={article.thumbnail_image} style={{flex:1,height:100,width:100}} />
-          <h3 style={{flex:2}}>{article.title}</h3>
+    <div>
+      <div className="row">
+          <div className="col-md-offset-1 col-md-8">
+            <Link to="/" className="text-left">Back To Index</Link>
+            </div>
+            <div className="col-md-offset-2 col-md-1">
+            <button
+              className="btn btn-danger"
+              onClick={this.onDeleteClick.bind(this)}
+            >
+             Delete Post
+            </button>
         </div>
+        </div>
+
+        <div className="row">
+        <div className="col-md-offset-1 col-md-1">
+          <img src={article.thumbnail_image} className="thumbnail img-responsive" />
+        </div>
+        <div className="col-md-10 col-md-offset-0">
+          <h3>{article.title}</h3></div>
+        </div>
+        
+        <div className="row">        
         <h6>Manufacturer: {article.manufacturer}</h6>
-        <br />
-        <img src={article.image} style={{flex:1}}/>
-        <br />
+        </div>
+        <div className="row col-md-offset-1 col-md-11">
+        <img src={article.image} className="img-responsive" alt="Vehicle Image" width="auto" height="auto"/>
+        </div>
+
+        <div>
         <h6> <a href={article.url} target="_blank">Click </a> for More about it </h6>
+      </div>
       </div>
     );
   }

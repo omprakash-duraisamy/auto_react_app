@@ -5,7 +5,7 @@ export const FETCH_ARTICLE = "fetch_article";
 export const CREATE_ARTICLE = "create_article";
 export const DELETE_ARTICLE = "delete_article";
 
-const ROOT_URL = "http://node11.codenvy.io:39491/api";
+const ROOT_URL = "http://node18.codenvy.io:43899/api";
 //const API_KEY = "?key=PAPERCLIP1234";
 
 export function fetchArticles() {

@@ -24,7 +24,7 @@ class ArticlesIndex extends Component {
   render() {
     return (
       <div>
-        <div className="text-xs-right">
+        <div className="text-right">
           <Link className="btn btn-primary" to="/article/new">
             + Add Article
           </Link>

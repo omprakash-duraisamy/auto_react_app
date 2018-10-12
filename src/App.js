@@ -33,8 +33,8 @@ class App extends Component {
 //        </header>
          <Provider store={createStoreWithMiddleware(reducers)}>
             <BrowserRouter>
-            <div style={{paddingTop:50}}>
-              <h1>Auto Articles</h1>
+            <div className="container-fluid">
+              <h1 className="text-center">Auto Articles</h1>
                 <Switch>
                   <Route path="/article/new" component={ArticleNew} />
                   <Route path="/article/:id" component={ArticleShow} />
