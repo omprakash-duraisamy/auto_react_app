@@ -6,7 +6,7 @@ export const CREATE_ARTICLE = "create_article";
 export const DELETE_ARTICLE = "delete_article";
 export const IS_LOADING_SHOW = "is_loading_show";
 
-const ROOT_URL = "http://35.200.157.105:1234/api";
+const ROOT_URL = "http://35.200.203.192:1234/api";
 //const API_KEY = "?key=PAPERCLIP1234";
 
 export function fetchArticles(page_number) {
