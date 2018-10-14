@@ -41,7 +41,7 @@ class ArticlesIndex extends Component {
 function mapStateToProps(state) {
     console.log(state);
   return {  
-    articles: state.articles 
+    articles: state.articles.articles
   };
 }
 

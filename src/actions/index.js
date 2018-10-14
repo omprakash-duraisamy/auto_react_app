@@ -4,8 +4,9 @@ export const FETCH_ARTICLES = "fetch_articles";
 export const FETCH_ARTICLE = "fetch_article";
 export const CREATE_ARTICLE = "create_article";
 export const DELETE_ARTICLE = "delete_article";
+export const IS_LOADING_SHOW = "is_loading_show";
 
-const ROOT_URL = "http://node18.codenvy.io:43899/api";
+const ROOT_URL = "http://localhost:1234/api";
 //const API_KEY = "?key=PAPERCLIP1234";
 
 export function fetchArticles() {
@@ -15,6 +16,13 @@ export function fetchArticles() {
   return {
     type: FETCH_ARTICLES,
     payload: request
+  };
+}
+
+export const isLoadingShowAction = (isLoading) => {
+  return {
+    type: IS_LOADING_SHOW,
+    payload: isLoading
   };
 }
 
