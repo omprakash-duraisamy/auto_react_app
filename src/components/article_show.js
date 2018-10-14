@@ -70,6 +70,7 @@ class ArticleShow extends Component {
 }
 
 function mapStateToProps(state) {
+  console.log(state.articles);
   const { article, isLoadingShow } = state.articles
   return { article: article[0], isLoadingShow };
 }

@@ -12,8 +12,8 @@ class ArticlesIndex extends Component {
   renderArticles() {
     return _.map(this.props.articles, article => {
       return (
-        <li className="list-group-item" key={article.articleID}>
-          <Link to={`/article/${article.articleID}`}>
+        <li className="list-group-item" key={article.article_id}>
+          <Link to={`/article/${article.article_id}`}>
             {article.title}
           </Link>
         </li>

@@ -11,8 +11,6 @@ const ROOT_URL = "http://localhost:1234/api";
 
 export function fetchArticles() {
   const request = axios.get(`${ROOT_URL}/fetchAllArticles`);
-  console.log(request);
-
   return {
     type: FETCH_ARTICLES,
     payload: request
