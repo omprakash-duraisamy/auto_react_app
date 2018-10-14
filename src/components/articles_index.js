@@ -6,7 +6,7 @@ import { fetchArticles } from "../actions";
 
 class ArticlesIndex extends Component {
   componentDidMount() {
-    this.props.fetchArticles();
+    this.props.fetchArticles(1);
   }
 
   renderArticles() {

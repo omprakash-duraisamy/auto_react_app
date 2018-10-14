@@ -6,11 +6,11 @@ export const CREATE_ARTICLE = "create_article";
 export const DELETE_ARTICLE = "delete_article";
 export const IS_LOADING_SHOW = "is_loading_show";
 
-const ROOT_URL = "http://localhost:1234/api";
+const ROOT_URL = "http://35.200.157.105:1234/api";
 //const API_KEY = "?key=PAPERCLIP1234";
 
-export function fetchArticles() {
-  const request = axios.get(`${ROOT_URL}/fetchAllArticles`);
+export function fetchArticles(page_number) {
+  const request = axios.get(`${ROOT_URL}/fetchAllArticles/${page_number}`);
   return {
     type: FETCH_ARTICLES,
     payload: request
